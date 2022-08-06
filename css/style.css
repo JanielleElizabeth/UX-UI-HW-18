@@ -1,0 +1,135 @@
+nav {
+    display: flex;
+    max-height: 100px;
+}
+
+ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    padding-top: 1%;
+    margin-left: -100px;
+}
+
+li {
+    list-style: none;
+    display: inline-flex;
+    color: #ffffff;
+    font-size: 22;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.16em;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.hero-header {
+    margin: 0 auto;
+    text-align: center;
+    max-height: calc(100vh - 100px);
+}
+
+body {
+    background-image: url("../Images/BurrageCloudsBackround.png");
+    background-size: 100%;
+    height: calc(100vh - 25px);
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+
+.burrage-sig-and-title {
+    width: 35%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+.intro-text {
+    margin: 0 auto;
+    width: 50%;
+    max-height: 130px;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 13px 24px;
+    gap: 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.16em;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+
+}
+
+.hero-button {
+    background-color: #FFFAFA;
+    color: #D38A89;
+
+}
+
+.logo {
+    width: 7%;
+    padding: 1%;
+
+}
+
+.large-logo {
+    width: 60%;
+    align-items: center;
+}
+
+.icons {
+    width: 40%;
+    align-items: center;
+
+}
+
+footer {
+    background-image: url("./../Images/FooterArt.png");
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 17px;
+
+    }
+
+    ;
+
+    .intro-text {}
+
+}
