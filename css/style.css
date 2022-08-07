@@ -27,6 +27,7 @@ li {
     margin: 0 auto;
     text-align: center;
     max-height: calc(100vh - 100px);
+    margin-bottom: 50px;
 }
 
 body {
@@ -45,20 +46,22 @@ body {
 
 p {
     font-size: 22px;
-    color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
+    color: #000000;
+    line-height: 30px;
 }
 
 .intro-text {
     margin: 0 auto;
     width: 50%;
     max-height: 130px;
+    color: #ffffff;
 }
 
 button {
     text-transform: uppercase;
-    padding: 13px 24px;
+    padding: 20px 24px;
     gap: 10px;
     border: none;
     border-radius: 6px;
@@ -70,13 +73,16 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 20px;
+    background-color:#D38A89;
+    color: #FFFAFA;
+    margin-top: 25px;
 
 }
 
 .hero-button {
     background-color: #FFFAFA;
     color: #D38A89;
+    margin: 30px;
 
 }
 
@@ -103,7 +109,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 0%;
 }
 
 .footer-content {
@@ -123,13 +129,67 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-    p {
-        font-size: 17px;
-
+    .intro-text{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    ;
+    p{
+        font-size: 17px;
+    }
 
-    .intro-text {}
+    .case-study-preview{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+
+
+
+
+}
+.case-study-preview{
+    background-color: #F6E2E2;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom:40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mockup-rwd{
+    width: 650px;
+    margin-top: 30px;
+}
+
+.case-study-content{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 15px;
+    align-items: left;
+}
+
+.mockup-mobile{
+    height: 450px;
+
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color:black;
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+
 
 }
