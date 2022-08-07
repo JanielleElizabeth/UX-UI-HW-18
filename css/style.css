@@ -1,15 +1,15 @@
 nav {
     display: flex;
     max-height: 100px;
+    flex-direction: row;
 }
 
 ul {
     display: flex;
     width: 40%;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     margin-top: 3%;
     padding-top: 1%;
-    margin-left: -100px;
 }
 
 li {
@@ -73,16 +73,17 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color:#D38A89;
-    color: #FFFAFA;
+    background-color:#BF5554;
+    color: #ffffff;
     margin-top: 25px;
 
 }
 
 .hero-button {
     background-color: #FFFAFA;
-    color: #D38A89;
+    color: #BF5554;
     margin: 30px;
+    
 
 }
 
@@ -128,32 +129,6 @@ h1 {
 
 }
 
-@media only screen and (max-width: 768px) {
-    .intro-text{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    p{
-        font-size: 17px;
-    }
-
-    .case-study-preview{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h2{
-        font-size: 28px;
-    }
-
-
-
-
-
-}
 .case-study-preview{
     background-color: #F6E2E2;
     padding: 20px;
@@ -180,6 +155,9 @@ h1 {
 
 .mockup-mobile{
     height: 450px;
+    margin: 30px;
+    margin-left: 205px;
+    margin-right: 205px;
 
 }
 
@@ -190,6 +168,35 @@ h2{
     font-size: 44px;
     line-height: 50px;
     letter-spacing: 0.1em;
+}
 
+@media only screen and (max-width: 768px){
+    .intro-text{
+        width: 100%;
+        margin: 0 auto;
+    }
+     p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    
+    .case-study-preview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .case-study-content{
+        margin: 0 5px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .mockup-rwd{
+        width: 500px;
+    }
 }
