@@ -1,34 +1,78 @@
 nav {
-    display: flex;
     max-height: 100px;
-    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-right: 100px;
+
+}
+
+.nav-image{
+display: flex;
+flex-direction: row;
 }
 
 ul {
+    margin-top: 10px;
+    padding-top: 10px;
     display: flex;
-    width: 40%;
-    justify-content:space-evenly;
-    margin-top: 3%;
-    padding-top: 1%;
+    justify-self: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 0px;
 }
 
 li {
     list-style: none;
-    display: inline-flex;
     color: #ffffff;
     font-size: 22;
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.16em;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 5px 20px;
+    display: inline;
+}
+
+.logo {
+    width: 100px;
+    padding: 1%;
+    justify-self: flex-start;
+    margin-left: 40px;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 .hero-header {
     margin: 0 auto;
     text-align: center;
-    max-height: calc(100vh - 100px);
-    margin-bottom: 50px;
+    align-items: center;
 }
+
+.nav-link{
+    margin: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 
 body {
     background-image: url("../Images/BurrageCloudsBackround.png");
@@ -53,8 +97,10 @@ p {
 }
 
 .intro-text {
-    margin: 0 auto;
-    width: 50%;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: -1%;
+    width: 70%;
     max-height: 130px;
     color: #ffffff;
 }
@@ -76,6 +122,7 @@ button {
     background-color:#BF5554;
     color: #ffffff;
     margin-top: 25px;
+    cursor: pointer;
 
 }
 
@@ -84,12 +131,6 @@ button {
     color: #BF5554;
     margin: 30px;
     
-
-}
-
-.logo {
-    width: 7%;
-    padding: 1%;
 
 }
 
@@ -110,7 +151,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 0%;
+    margin-top: -100px;
 }
 
 .footer-content {
@@ -199,4 +240,45 @@ h2{
     .mockup-rwd{
         width: 500px;
     }
+
+    .nav-link{
+        display: none;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    
+    .hamburger {
+        display: block;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .bar{
+        background-color: #ffffff;
+    }
+
+    .large-header-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 108%;
+    }
+.burrage-sig-and-title{
+    min-width: 260px;
+}
+
+body {
+    background-image: url("../Images/BurrageCloudsBackround.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+
+
 }
