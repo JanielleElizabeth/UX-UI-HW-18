@@ -151,7 +151,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: -40px;
 }
 
 .footer-content {
@@ -181,6 +181,19 @@ h1 {
     justify-content: center;
 
 }
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 700px 700px 700px;
+    grid-template-areas:
+    'CARE'
+    'NSA'
+    'Travel'
+
+    ;
+}
+
 
 .mockup-rwd{
     width: 650px;
@@ -238,7 +251,10 @@ h2{
         line-height: 33px;
     }
     .mockup-rwd{
-        width: 500px;
+        width: 450px;
+    }
+    .mockup-mobile{
+        height: 300px;
     }
 
     .nav-link{
