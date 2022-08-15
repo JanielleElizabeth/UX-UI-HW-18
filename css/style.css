@@ -190,7 +190,6 @@ h1 {
         'CARE'
         'NSA'
         'Travel'
-
     ;
 }
 
@@ -232,7 +231,7 @@ h2 {
 
     p {
         font-size: 17px;
-        line-height: 22px;
+        line-height: 23px;
     }
 
     .case-study-preview {
